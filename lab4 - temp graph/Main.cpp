@@ -47,15 +47,12 @@ int main()
 			return 9999;
 		}
 
-		if (inFile.eof()) { // checks if the file is at its end if so it breaks the code and outputs 
+		t.starPrint(); // if the first two conditions are not meet than the while loop will continue here and calls star print
+		
+	if (inFile.eof()) { // checks if the file is at its end if so it breaks the code and outputs 
 			cout << "the end of file has been reached."; // this 
 			break;  // Ends the loop when the end of the file is reached.
 		}
-
-		
-
-		t.starPrint(); // if the first two conditions are not meet than the while loop will continue here and calls star print
-
 		temp1 = 0; // once done with printing stars resets temp1 to 0 and restarts untill the end of file has been reached 
 	}
 
